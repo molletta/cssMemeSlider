@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemeSlider</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,37 +13,36 @@
 
             <div class="slider">
 
-                <div class="input_radio">
-                    <input type="radio" name="radio_slider" id="slide1">
+                    <input type="radio" name="radio_slider" id="slide1" checked>
                     <input type="radio" name="radio_slider" id="slide2">
                     <input type="radio" name="radio_slider" id="slide3">
                     <input type="radio" name="radio_slider" id="slide4">
                     <input type="radio" name="radio_slider" id="slide5">
-                </div>
 
-
-                <div class="slides">
-                    <div class="slider_content_wrap">
-                        <div class="slider_content slide1">
-                            <img class="slide_img" src="img/mem1.jpg" alt="img_mem1">
-                        </div>
-                        <div class="slider_content slide2">
-                            <img class="slide_img" src="img/mem2.jpg" alt="img_mem2">
-                        </div>
-                        <div class="slider_content slide3">
-                            <img class="slide_img" src="img/mem3.jpg" alt="img_mem3">
-                        </div>
-                        <div class="slider_content slide4">
-                            <img class="slide_img" src="img/mem4.jpg" alt="img_mem4">
-                        </div>
-                        <div class="slider_content slide5">
-                            <img class="slide_img" src="img/mem5.jpeg" alt="img_mem5">
+                <div id="slides">
+                    <div class="slides_wrap">
+                        <div class="slides_content">
+                            <div class="slide_img slide1">
+                                <img class="img" src="img/mem1.jpg" alt="img_mem1">
+                            </div>
+                            <div class="slide_img slide2">
+                                <img class="img" src="img/mem2.jpg" alt="img_mem2">
+                            </div>
+                            <div class="slide_img slide3">
+                                <img class="img" src="img/mem3.jpg" alt="img_mem3">
+                            </div>
+                            <div class="slide_img slide4">
+                                <img class="img" src="img/mem4.jpg" alt="img_mem4">
+                            </div>
+                            <div class="slide_img slide5">
+                                <img class="img" src="img/mem5.jpeg" alt="img_mem5">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="signature">
+            <div id="signature">
 
                 <div class="slider_text">
                     <div class="text_content">
@@ -54,12 +54,22 @@
                     </div>
                 </div>
 
-                <div class="slider_nav">
-                    <label class="radio_nav" for="slide1"></label>
-                    <label class="radio_nav" for="slide2"></label>
-                    <label class="radio_nav" for="slide3"></label>
-                    <label class="radio_nav" for="slide4"></label>
-                    <label class="radio_nav" for="slide5"></label>
+                <div class="controls">
+                    <label class="radio_nav" for="slide1">
+                        <div class="control"></div>
+                    </label>
+                    <label class="radio_nav" for="slide2">
+                        <div class="control"></div>
+                    </label>
+                    <label class="radio_nav" for="slide3">
+                        <div class="control"></div>
+                    </label>
+                    <label class="radio_nav" for="slide4">
+                        <div class="control"></div>
+                    </label>
+                    <label class="radio_nav" for="slide5">
+                        <div class="control"></div>
+                    </label>
                 </div>
 
 

@@ -1,2 +1,132 @@
+*{
+    margin: 0;
+}
+.container_wrap {
+    min-height: 55rem;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: black;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 85rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    background-color: black;
+}
+
+.slider input[type = radio]{
+    display: none;
+}
+
+.slide_img {
+    width: 100%;
+    height: 100%;
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+}
+#slides {
+    z-index: 1;
+}
+
+.slides_wrap {
+    width: 100%;
+    overflow: hidden;
+}
+.slides_content {
+    display: flex;
+}
+
+#slide1:checked ~ #slides .slides_content {
+    margin-left: 0;
+}
+#slide2:checked ~ #slides .slides_content {
+    margin-left: -100%;
+}
+#slide3:checked ~ #slides .slides_content {
+    margin-left: -200%;
+}
+#slide4:checked ~ #slides .slides_content {
+    margin-left: -300%;
+}
+#slide5:checked ~ #slides .slides_content {
+    margin-left: -400%;
+}
+
+.slides_content {
+    height: 45rem;
+    width: 500%;
+    transition: all .5s ease;
+}
+.slide_img {
+    width: 20%;
+    height: 100%;
+
+}
+
+.slider_text {
+    color: aliceblue;
+    overflow: hidden;
+    height: 2rem;
+    font-size: 2rem;
+}
+
+#signature {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 8rem;
+}
+
+label {
+    cursor: pointer;
+    padding: 0.5rem;
+    height: max-content;
+}
+.controls {
+    display: flex;
+    height: max-content;
+}
+.control {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    background: #1f018c;
+    border-radius: 50%;
+    align-items: center;
+}
+.radio_nav{
+    padding: 0.5rem;
+}
+.control:hover {
+    background-color: aliceblue;
+}
+#slide1:checked ~ #signature .controls.radio_nav.control:nth-child(1) {
+    background-color: blueviolet;
+}
+#slide2:checked ~ #signature .control:nth-child(2) {
+    background-color: blueviolet;
+}
+#slide3:checked ~ #signature .control:nth-child(3) {
+    background-color: blueviolet;
+}
+#slide4:checked ~ #signature .control:nth-child(4) {
+    background-color: blueviolet;
+}
+#slide5:checked ~ #signature .control:nth-child(5) {
+    background-color: blueviolet;
+}
 
 
