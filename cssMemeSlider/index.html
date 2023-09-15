@@ -4,31 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemeSlider</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container_wrap">
         <div class="container">
-            <div class="slider_contant">
-                <img class="slide slide1" src="img/mem1.jpg" alt="img_mem1">
-                <img class="slide slide2" src="img/mem2.jpg" alt="img_mem2">
-                <img class="slide slide3" src="img/mem3.jpg" alt="img_mem3">
-                <img class="slide slide4" src="img/mem4.jpg" alt="img_mem4">
-                <img class="slide slide5" src="img/mem5.jpeg" alt="img_mem5">
+
+            <div class="slider">
+
+                <div class="input_radio">
+                    <input type="radio" name="radio_slider" id="slide1">
+                    <input type="radio" name="radio_slider" id="slide2">
+                    <input type="radio" name="radio_slider" id="slide3">
+                    <input type="radio" name="radio_slider" id="slide4">
+                    <input type="radio" name="radio_slider" id="slide5">
+                </div>
+
+
+                <div class="slides">
+                    <div class="slider_content_wrap">
+                        <div class="slider_content slide1">
+                            <img class="slide_img" src="img/mem1.jpg" alt="img_mem1">
+                        </div>
+                        <div class="slider_content slide2">
+                            <img class="slide_img" src="img/mem2.jpg" alt="img_mem2">
+                        </div>
+                        <div class="slider_content slide3">
+                            <img class="slide_img" src="img/mem3.jpg" alt="img_mem3">
+                        </div>
+                        <div class="slider_content slide4">
+                            <img class="slide_img" src="img/mem4.jpg" alt="img_mem4">
+                        </div>
+                        <div class="slider_content slide5">
+                            <img class="slide_img" src="img/mem5.jpeg" alt="img_mem5">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="slider_text">
-                <div class="text">CSS Meme Slider. You can do it! We believe in you!</div>
-                <div class="text">CSS Meme Slider. YES! I can do it!</div>
-                <div class="text">CSS Meme Slider. I CAAAAN DOOO IT!!!</div>
-                <div class="text">CSS Meme Slider. I can't do it....</div>
-                <div class="text">CSS Meme Slider. YES! I did it!</div>
+
+            <div class="signature">
+
+                <div class="slider_text">
+                    <div class="text_content">
+                        <p class="text">You can do it! We believe in you!</p>
+                        <p class="text">YES! I can do it!</p>
+                        <p class="text">I CAAAAN DOOO IT!!!</p>
+                        <p class="text">I can't do it....</p>
+                        <p class="text">YES! I did it!</p>
+                    </div>
+                </div>
+
+                <div class="slider_nav">
+                    <label class="radio_nav" for="slide1"></label>
+                    <label class="radio_nav" for="slide2"></label>
+                    <label class="radio_nav" for="slide3"></label>
+                    <label class="radio_nav" for="slide4"></label>
+                    <label class="radio_nav" for="slide5"></label>
+                </div>
+
+
             </div>
-            <div class="controls">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
-            </div>
+
         </div>
     </div>
 </body>
