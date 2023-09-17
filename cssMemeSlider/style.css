@@ -2,7 +2,6 @@
     margin: 0;
 }
 .container_wrap {
-    min-height: 55rem;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -11,7 +10,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: 85rem;
+    max-width: 90%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -81,7 +80,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    min-height: 8rem;
+    min-height: 5rem;
 }
 
 label {
@@ -128,16 +127,7 @@ label {
 }
 
 
-@media  screen and (max-width: 1024px) {
-    .container {
-        max-width: 60rem;
-    }
-}
-
 @media screen and (max-width: 500px) {
-    .container {
-        max-width: 29rem;
-    }
     .slides_content {
         height: 24rem;
     }
